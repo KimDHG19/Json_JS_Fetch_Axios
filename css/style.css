@@ -1,0 +1,52 @@
+:root {
+    --pcum-orange: #f93;
+}
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+.container {
+    margin: 2rem auto;
+    width: 800px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 1rem;
+  }
+  @media only screen and (max-width: 799px) {
+    .container {
+        margin: 0 auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 1%;
+      }
+  }
+
+  @media only screen and (max-width: 320px) {
+    .container {
+        margin: 0 auto;
+        width: 100%;
+        display: block;
+      }
+      .container > div + div {
+          margin-top: 1rem;
+      }
+  }
+  .card {
+    background-color: #ccc;
+    padding: 2rem;
+    text-align: center;
+  }
+  img { max-width: 100%;}
+  .card a { 
+    display: block;  
+    border: 1px solid var(--pcum-orange); 
+    padding: 10px 15px;
+    margin: .5rem;
+    color: var(--pcum-orange);
+    background-color: #f2f2f2;
+    text-decoration: none;
+    transition: 1s;
+    text-transform: uppercase;
+    }
+    .card a:hover {
+      background-color: #fff;
+      
+    }

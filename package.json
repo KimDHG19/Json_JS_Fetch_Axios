@@ -1,0 +1,7 @@
+{
+  "name": "JsonOchRestAPI_1",
+  "version": "1.0.0",
+  "devDependencies": {
+    "axios": "^0.21.1"
+  }
+}
